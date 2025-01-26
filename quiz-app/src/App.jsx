@@ -1,9 +1,16 @@
+// Component Imports
+import Header from "./components/Header";
+import Quiz from "./components/Quiz";
+
 function App() {
   return (
     <>
-      <h1>Quiz app</h1>
+      <Header />
+      <main>
+        <Quiz />
+      </main>
     </>
-  )
+  );
 }
 
 export default App;
