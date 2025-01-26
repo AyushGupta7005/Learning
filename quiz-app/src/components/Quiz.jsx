@@ -13,7 +13,7 @@ export default function Quiz() {
   const activeQuestionIndex = userAnswers.length;
   const quizIsCompleted=QUESTIONS.length===activeQuestionIndex;
   if(quizIsCompleted){
-    return <QuizSummary/>
+    return <QuizSummary userAnswers={userAnswers}/>
   }
   function handleSelectAnswer(selectedAnswer) {
     setUserAnswers((prevUserAnswers) => [...prevUserAnswers, selectedAnswer]);
