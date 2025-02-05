@@ -1,8 +1,10 @@
-# React + Vite
+🧠 Quizzer ⏳
+A React-based Quiz App that features a countdown timer, tracks correct, wrong, and skipped answers, and provides feedback with a delay timer for showing selected answer.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+✅ Timer: Each question has a countdown timer.
+✅ Answer Tracking: Marks answers as correct, wrong, or skipped.
+✅ Dynamic Questions: Supports multiple-choice questions.
+✅ Instant Feedback: Shows result per question and final score.
+✅ Quiz Statistics: Shows percents for correct, wrong, or skipped answers.
+✅ User-friendly UI: Simple and responsive interface.
