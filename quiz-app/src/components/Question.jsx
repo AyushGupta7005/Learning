@@ -31,9 +31,22 @@ export default function Question({
   } else if (answer.selectedAnswer) {
     answerState = "answered";
   }
+
+  let timer = 10000; //max time for answering a question
+  if (answer.selectedAnswer) {
+    timer = 1000;
+  }
+  if (answer.isCorrect !== null) {
+    timer = 2000;
+  }
   return (
     <div id="question">
-      <QuizTimer timeout={10000} onTimeout={handleSkipQuestion} />
+      <QuizTimer
+        key={timer}
+        timeout={timer}
+        onTimeout={answer.selectedAnswer === "" ? handleSkipQuestion : null}
+        mode={answerState}
+      />
       <h2>{QUESTIONS[activeQuestionIndex].text}</h2>
       <Options
         options={QUESTIONS[activeQuestionIndex].options}
