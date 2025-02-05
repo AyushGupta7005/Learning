@@ -8,7 +8,7 @@ export default function QuizSummary({ userAnswers }) {
       <ol>
         {QUESTIONS.map((question, index) => {
           return (
-            <li>
+            <li key={question.answer}>
               <h3>{index + 1}</h3>
               <p className="question">{question.text}</p>
               <p className="user-answer">{userAnswers[index]}</p>
