@@ -1,3 +1,6 @@
+Deployed Link -
+https://react-web-quiz.vercel.app/
+
 🧠 Quizzer ⏳
 A React-based Quiz App that features a countdown timer, tracks correct, wrong, and skipped answers, and provides feedback with a delay timer for showing selected answer.
 
